@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!--это макет для отображения одной серии кондиционерав списке (RecyclerView)
+     в активности SeriesSelectionActivity.-->
+
+    <Button
+        android:id="@+id/buttonSeries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="@drawable/button_brand_background"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_50"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Логотип приложения"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="SplitМастер"
+        android:textColor="@color/purple_700"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Большая кнопка поиска ошибок -->
+    <Button
+        android:id="@+id/btnErrorCodes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Поиск кодов ошибок"
+        android:textSize="18sp"
+        android:padding="18dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_gradient"
+        android:textColor="@android:color/white" />
+
+    <!-- Калькулятор охлаждения -->
+    <Button
+        android:id="@+id/btnCoolingCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🧮 Калькулятор охлаждения"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="250dp"
+    android:background="@drawable/button_gradient"
+    android:textColor="@android:color/white" />
+
+    <!-- Две кнопки связи рядом -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">  <!-- Уменьшил отступ -->
+
+        <!-- Кнопка WhatsApp (слева) -->
+        <Button
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="💬 WhatsApp"
+            android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#FF25D366"
+        android:textColor="@android:color/white" />
+
+        <!-- Кнопка Telegram (справа) -->
+        <Button
+            android:id="@+id/btnTelegram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="📱 Telegram"
+            android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#0088cc"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!-- Две кнопки информации рядом -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Кнопка информации об активации (слева) -->
+        <Button
+            android:id="@+id/btnActivationInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="📊 Активация"
+            android:textSize="14sp"
+        android:padding="12dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/white" />
+
+        <!-- Кнопка проверки обновлений (справа) -->
+        <Button
+            android:id="@+id/btnCheckUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="🔄 Обновления"
+            android:textSize="14sp"
+        android:padding="12dp"
+        android:background="@color/purple_300"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Телефон: 7(993) 330-20-25"
+        android:textColor="@color/purple_600"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
